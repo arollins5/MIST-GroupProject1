@@ -81,16 +81,16 @@ Moving to the `Menu` entity, it includes the name of each item as well as their 
 
  - Query 4 ensures pay parity between kitchen and cook staff. While there has already been focus on server staff as they handle the clients, it’s important not to forget the back-of-house staff. This query allows managers to make sure that those holding these job positions are relatively equal in pay to support all staff in the restaurant.
 
-**5)** Query 5 counts the number of servers that the restaurant currently has employeed.
+**5)** Query 5 counts the number of servers that the restaurant currently has employed.
 ![Query5](https://github.com/user-attachments/assets/2092087e-6573-43c2-8f38-a1967300ff61)
 
- - Query 5 is useful in determining if there is enough servers to ensure there are the right amount of servers. There can be a loss in performance for the restaurant if there is not enough servers to tend to tables and customers. However, it would be impractical and wasteful to have too many servers employeed at one time. This helps management keep an equilibrium between customer server and managing costs.
+ - Query 5 is useful in determining if there are enough servers to ensure there are the right amount of servers. There can be a loss in performance for the restaurant if there are not enough servers to tend to tables and customers. However, it would be impractical and wasteful to have too many servers employed at one time. This helps management keep an equilibrium between customer server and managing costs.
 
 **6)** Query 6 lists the customer contact information for customers who had a total over $40 in descending order.
 
 ![Query6](https://github.com/user-attachments/assets/bbdc50c9-6641-43b6-b76a-1ae744ced88e)
 
- - Query 6 allows employees to pull the contact information of cusomters who spent a signficant amount of money at the restaurant. By pulling this data, managers can use the contact information to send promotions details and news about any events. This is to entice the higher paying customer to come back to the restaurant and generate customer loyalty. 
+ - Query 6 allows employees to pull the contact information of customers who spent a significant amount of money at the restaurant. By pulling this data, managers can use the contact information to send promotions details and news about any events. This is to entice the higher paying customer to come back to the restaurant and generate customer loyalty. 
 
 **7)** Query 7 lists items on the menu with their name and price in descensding order if the price is less than or equal to 9.99.
 
