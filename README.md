@@ -126,7 +126,7 @@ Moving to the `Menu` entity, it includes the name of each item as well as their 
 ![Query8R](https://github.com/user-attachments/assets/c620bd66-62ad-4c69-b642-dfc142ddebb9)
 
 
- - Query 8 helps managers determine if certain tables receive more reservations based on amount of seats. Additionally, it can help servers know how to optimize walk-in customer traffic and direct them to tables that are not as popular for reservations to ensure the seating is utilized. 
+ - Query 8 helps managers determine if certain tables receive more reservations based on the amount of seats. Additionally, it can help servers know how to optimize walk-in customer traffic and direct them to tables that are not as popular for reservations to ensure the seating is utilized. 
 
 ## Database Information
 Each of the queries shown in this project are bookmarked through the use of stored procedures in the database `ns_4610Fa24Group10`. These queries can be called upon using `TP_Qx` where x is replaced by the query number.
