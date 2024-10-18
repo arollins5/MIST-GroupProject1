@@ -26,7 +26,7 @@ This entity includes a unique identifier of each employee as well as the employe
 
 The `Seating` entity includes information about each table, such as the table number, the number of seats each table has, and the employee serving the table. `Seating` also has two other relationships with entities other than `Employees`. One of the branches is for the table reservations.
 
-At The Dawg House, customers can make reservations that are stored in the `TableReservations` entity. The information stored in this entity includes the number of people in the party, the reservation date, the table they are assigned to and a unique identifier for each reservation. Additionally, there can be many reservations for one table, but there needs to be a table for a reservation, which is represented by the identifying one-to-many relationship.
+At The Dawg House, customers can make reservations that are stored in the `TableReservations` entity. The information stored in this entity includes the number of people in the party, the reservation date, the table they are assigned to, and a unique identifier for each reservation. Additionally, there can be many reservations for one table, but there needs to be a table for a reservation, which is represented by the identifying one-to-many relationship.
 
 The other branch from `Seating` is related to the customers' orders. Many customers over time can have orders at one table, which is why there is a one-to-many relationship from `Seating` to `CustomerOrders`. The `CustomerOrders` entity includes information about the order's unique identifier, the amount on the order, the payment type of order, the contact information of the customer who made the order, and the table number they were at. It does not include the items of the order, which is instead represented by the `OrderDetails` entity with a one-to-many relationship as there are many details for each order.
 
@@ -76,7 +76,7 @@ Moving to the `Menu` entity, it includes the name of each item as well as their 
 
  - Query 2 shows what types of tables bring in the most money from customers compared to the average order and earnings of other tables. This allows management to see what table seat types to add to the diner in the future to increase sales.
 
-**3)** Query 3 lists out the employee IDs, what department they belong to, and their overall hourly pay when they’re hourly pay ends in .00. If an employee has received a raise in this fiscal year, their hourly pay would end in .25.
+**3)** Query 3 lists out the employee IDs, what department they belong to, and their overall hourly pay when their hourly pay ends in.00. If an employee has received a raise in this fiscal year, their hourly pay would end in .25.
 
 ![Query3](https://github.com/user-attachments/assets/bcfaeb24-0ec9-41ff-9e3d-f8d0f92d6536)
 
@@ -84,7 +84,7 @@ Moving to the `Menu` entity, it includes the name of each item as well as their 
 
  - Query 3 finds out which employees’ hourly pays end in .00 which allows management to determine who should receive a raise next fiscal year as they have not gotten one this year.
 
-**4)** Query 4 lists the employees' names, their title, and hourly pay specifically between the Cook and Kitchen staff. It is grouped by the employee's department and job unique identifier and ordered by each department in descending order so Kitchen staff are presented first.
+**4)** Query 4 lists the employees' names, their titles, and hourly pay specifically between the Cook and Kitchen staff. It is grouped by the employee's department and job unique identifier and ordered by each department in descending order, so Kitchen staff are presented first.
 
 ![Query4](https://github.com/user-attachments/assets/ee18e381-ddfa-4ade-b695-db8e632e825c)
 
@@ -100,7 +100,7 @@ Moving to the `Menu` entity, it includes the name of each item as well as their 
 ![Query5](https://github.com/user-attachments/assets/e679f6c8-6dc5-4b8b-b3f4-b5905f88d252)
 
 
- - Query 5 is useful in determining if there are enough servers to ensure there are the right amount of servers. There can be a loss in performance for the restaurant if there are not enough servers to tend to tables and customers. However, it would be impractical and wasteful to have too many servers employed at one time. This helps management keep an equilibrium between customer server and managing costs.
+ - Query 5 is useful in determining if there are enough servers to ensure there are the right amount of servers. There can be a loss in performance for the restaurant if there are not enough servers to tend to tables and customers. However, it would be impractical and wasteful to have too many servers employed at one time. This helps management keep an equilibrium between customer service and managing costs.
 
 **6)** Query 6 lists the customer contact information for customers who had a total over $40 in descending order.
 
@@ -108,9 +108,9 @@ Moving to the `Menu` entity, it includes the name of each item as well as their 
 
 ![Query6R](https://github.com/user-attachments/assets/4bf3ef75-dae9-4abb-b8f2-b0ef34784a67)
 
- - Query 6 allows employees to pull the contact information of customers who spent a significant amount of money at the restaurant. By pulling this data, managers can use the contact information to send promotions details and news about any events. This is to entice the higher paying customer to come back to the restaurant and generate customer loyalty. 
+ - Query 6 allows employees to pull the contact information of customers who spent a significant amount of money at the restaurant. By pulling this data, managers can use the contact information to send promotion details and news about any events. This is to entice the higher-paying customer to come back to the restaurant and generate customer loyalty. 
 
-**7)** Query 7 lists items on the menu with their name and price in descensding order if the price is less than or equal to 9.99.
+**7)** Query 7 lists items on the menu with their name and price in descending order if the price is less than or equal to 9.99.
 
 ![Query7](https://github.com/user-attachments/assets/0aa2722c-a442-4cd8-9ee8-6364e64499ae)
 
@@ -119,7 +119,7 @@ Moving to the `Menu` entity, it includes the name of each item as well as their 
 
  - Query 7 is important as The Dawg House serves the local community, many of which are college students. Considering this, managers are going to want to cater to the "broke college student" demographic and make sure there are ample menu items that are afforadable and appealing.
 
-**8)** Query 8 shows the amount of reservations for each table in descending order along with the amount of seats the table has.
+**8)** Query 8 shows the amount of reservations for each table in descending order along with the number of seats the table has.
 
 ![Query8](https://github.com/user-attachments/assets/d1b81a75-87ff-4898-8162-c2a446ee2616)
 
@@ -128,8 +128,8 @@ Moving to the `Menu` entity, it includes the name of each item as well as their 
 
  - Query 8 helps managers determine if certain tables receive more reservations based on amount of seats. Additionally, it can help servers know how to optimize walk-in customer traffic and direct them to tables that are not as popular for reservations to ensure the seating is utilized. 
 
-### Database Information
+## Database Information
 Each of the queries shown in this project are bookmarked through the use of stored procedures in the database `ns_4610Fa24Group10`. These queries can be called upon using `TP_Qx` where x is replaced by the query number.
 
-### Presentation
+## Presentation
 For a visual presentation on the scenario, data model, and first 3 complex queries for our project please visit: [MIST4610 Group 10 Project 1 Presentation](https://docs.google.com/presentation/d/1NC_LrD7BzF1PbfOOfNsZf66cgQCfGf4M/edit?usp=sharing&ouid=101877479055113419396&rtpof=true&sd=true)
