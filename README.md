@@ -117,7 +117,7 @@ Moving to the `Menu` entity, it includes the name of each item as well as their 
 ![Query7R](https://github.com/user-attachments/assets/d8e51ec6-cf98-4111-8107-9f6e657d1b9b)
 
 
- - Query 7 is important as The Dawg House serves the local community, many of which are college students. Considering this, managers are going to want to cater to the "broke college student" demographic and make sure there are ample menu items that are afforadable and appealing.
+ - Query 7 is important as The Dawg House serves the local community, many of which are college students. Considering this, managers are going to want to cater to the "broke college student" demographic and make sure there are ample menu items that are affordable and appealing.
 
 **8)** Query 8 shows the amount of reservations for each table in descending order along with the number of seats the table has.
 
