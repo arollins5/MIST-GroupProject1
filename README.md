@@ -14,14 +14,15 @@
 
 The objective of this project is to create a relational database modeled after hypothetical local restaurant The Dawg House. The Dawg House is a local Athens restaurant that caters to the local community and students at UGA. Our goal is to gain knowledge using the database as well as to improve day-to-day business within the diner, refine the workflow, and provide better service to customers. To do this, we have modeled the relevant relationships and entities as well as generated sample data to perform queries that will help us achieve our goal.
 
-## Data Model(PLACEHOLDER CHANGE THIS)
-![DataModel](https://github.com/user-attachments/assets/d043c8fc-9d6a-416d-ad1f-10126a400428)
+## Data Model
+![DataModel](https://github.com/user-attachments/assets/d05fbaaf-097e-487e-a9a5-791a9b8b6527)
+
 
 ### Description
 
 Our data model starts with the `Jobs` entity. This entity represents each department in the restaurant. It contains the pay and description of each job department. Additionally, each department has many employees, but not all employees need to have a department, which is represented by the non-identifying one-to-many relationship with the `Employees` entity.
 
-This entity includes a unique identifier of each employee as well as the employee's name, phone number, and pay. Some employees are Servers who take care of many tables, which are represented by the one-to-many relationship connecting the `Employees` and `Seating` entities.
+This entity includes a unique identifier of each employee as well as the employee's name, phone number, and pay. Some employees are servers who take care of many tables, which are represented by the one-to-many relationship connecting the `Employees` and `Seating` entities.
 
 The `Seating` entity includes information about each table, such as the table number, the number of seats each table has, and the employee serving the table. `Seating` also has two other relationships with entities other than `Employees`. One of the branches is for the table reservations.
 
@@ -61,11 +62,17 @@ Moving to the `Menu` entity, it includes the name of each item as well as their 
 
 ![Query1](https://github.com/user-attachments/assets/71e39bee-2c9b-47e1-b91b-ec6764b6da80)
 
+![Query1R](https://github.com/user-attachments/assets/50808e21-f60a-4690-9c69-60d934af688a)
+
+
  - Query 1 shows managers how many tables and how many customers the servers are tending to. It can be used to provide an even workload and distribution of employees to manage the service flow/customer traffic.
 
 **2)** Query 2 lists the average order amount from customer orders and lists the average amount for each table seat type. This is sorted in descending order from largest average to smallest average.
 
 ![Query2](https://github.com/user-attachments/assets/a5b04aa8-0085-4940-9b40-61fd654dcea6)
+
+![Query2R](https://github.com/user-attachments/assets/09c6b221-a5d2-4e7a-9cc2-6b33a55d43fd)
+
 
  - Query 2 shows what types of tables bring in the most money from customers compared to the average order and earnings of other tables. This allows management to see what table seat types to add to the diner in the future to increase sales.
 
@@ -73,16 +80,25 @@ Moving to the `Menu` entity, it includes the name of each item as well as their 
 
 ![Query3](https://github.com/user-attachments/assets/bcfaeb24-0ec9-41ff-9e3d-f8d0f92d6536)
 
+![Query3R](https://github.com/user-attachments/assets/3f1d9bd1-526a-4a58-8ae2-a475e666d601)
+
  - Query 3 finds out which employees’ hourly pays end in .00 which allows management to determine who should receive a raise next fiscal year as they have not gotten one this year.
 
 **4)** Query 4 lists the employees' names, their title, and hourly pay specifically between the Cook and Kitchen staff. It is grouped by the employee's department and job unique identifier and ordered by each department in descending order so Kitchen staff are presented first.
 
-![Query5](https://github.com/user-attachments/assets/ee18e381-ddfa-4ade-b695-db8e632e825c)
+![Query4](https://github.com/user-attachments/assets/ee18e381-ddfa-4ade-b695-db8e632e825c)
+
+![Query4R](https://github.com/user-attachments/assets/7ecb0a4a-38b6-4ad9-8d86-8fd897f0a3a6)
+
 
  - Query 4 ensures pay parity between kitchen and cook staff. While there has already been focus on server staff as they handle the clients, it’s important not to forget the back-of-house staff. This query allows managers to make sure that those holding these job positions are relatively equal in pay to support all staff in the restaurant.
 
 **5)** Query 5 counts the number of servers that the restaurant currently has employed.
+
 ![Query5](https://github.com/user-attachments/assets/2092087e-6573-43c2-8f38-a1967300ff61)
+
+![Query5](https://github.com/user-attachments/assets/e679f6c8-6dc5-4b8b-b3f4-b5905f88d252)
+
 
  - Query 5 is useful in determining if there are enough servers to ensure there are the right amount of servers. There can be a loss in performance for the restaurant if there are not enough servers to tend to tables and customers. However, it would be impractical and wasteful to have too many servers employed at one time. This helps management keep an equilibrium between customer server and managing costs.
 
@@ -90,11 +106,16 @@ Moving to the `Menu` entity, it includes the name of each item as well as their 
 
 ![Query6](https://github.com/user-attachments/assets/bbdc50c9-6641-43b6-b76a-1ae744ced88e)
 
+![Query6R](https://github.com/user-attachments/assets/4bf3ef75-dae9-4abb-b8f2-b0ef34784a67)
+
  - Query 6 allows employees to pull the contact information of customers who spent a significant amount of money at the restaurant. By pulling this data, managers can use the contact information to send promotions details and news about any events. This is to entice the higher paying customer to come back to the restaurant and generate customer loyalty. 
 
 **7)** Query 7 lists items on the menu with their name and price in descensding order if the price is less than or equal to 9.99.
 
 ![Query7](https://github.com/user-attachments/assets/0aa2722c-a442-4cd8-9ee8-6364e64499ae)
+
+![Query7R](https://github.com/user-attachments/assets/d8e51ec6-cf98-4111-8107-9f6e657d1b9b)
+
 
  - Query 7 is important as The Dawg House serves the local community, many of which are college students. Considering this, managers are going to want to cater to the "broke college student" demographic and make sure there are ample menu items that are afforadable and appealing.
 
@@ -102,4 +123,13 @@ Moving to the `Menu` entity, it includes the name of each item as well as their 
 
 ![Query8](https://github.com/user-attachments/assets/d1b81a75-87ff-4898-8162-c2a446ee2616)
 
+![Query8R](https://github.com/user-attachments/assets/c620bd66-62ad-4c69-b642-dfc142ddebb9)
+
+
  - Query 8 helps managers determine if certain tables receive more reservations based on amount of seats. Additionally, it can help servers know how to optimize walk-in customer traffic and direct them to tables that are not as popular for reservations to ensure the seating is utilized. 
+
+### Database Information
+Each of the queries shown in this project are bookmarked through the use of stored procedures in the database `ns_4610Fa24Group10`. These queries can be called upon using `TP_Qx` where x is replaced by the query number.
+
+### Presentation
+For a visual presentation on the scenario, data model, and first 3 complex queries for our project please visit: [MIST4610 Group 10 Project 1 Presentation](https://docs.google.com/presentation/d/1NC_LrD7BzF1PbfOOfNsZf66cgQCfGf4M/edit?usp=sharing&ouid=101877479055113419396&rtpof=true&sd=true)
